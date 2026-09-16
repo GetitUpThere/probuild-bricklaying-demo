@@ -9,14 +9,11 @@
   --shell:1280px;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:110px}
+html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
 a{color:inherit}
 button{font:inherit}
-:focus-visible{outline:3px solid #ef5b51;outline-offset:4px}
-a:focus-visible,button:focus-visible{border-radius:2px}
-
 .shell{width:min(var(--shell),calc(100% - 72px));margin-inline:auto}
 .skip-link{position:fixed;left:10px;top:-100px;z-index:1000;background:#fff;color:#111;padding:10px 14px}.skip-link:focus{top:10px}
 .eyebrow{margin:0 0 16px;font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase}.eyebrow.light{color:rgba(255,255,255,.75)}
@@ -69,8 +66,3 @@ a:focus-visible,button:focus-visible{border-radius:2px}
   .hero h1{font-size:18vw}.hero-image{object-position:55% 44%}.section-head h2,.craft-copy h2,.about-grid h2{font-size:4rem}.services-title h2{font-size:4.4rem}.contact-grid h2{font-size:4.7rem}.contact-phone{font-size:2.25rem}.footer-grid{grid-template-columns:1fr}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
-
-@media(min-width:1600px){
-  .shell{width:min(1280px,calc(100% - 120px))}
-  .hero-main{max-width:1080px}
-}
